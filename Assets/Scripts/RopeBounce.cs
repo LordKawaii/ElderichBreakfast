@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RopeBounce : MonoBehaviour {
     public float bounceForce = 500f;
+    public float angleForce = .0001f;
     
     private GameCon gameCon;
 
@@ -19,8 +20,7 @@ public class RopeBounce : MonoBehaviour {
             if (otherBody != null)
             { 
                 otherBody.AddForce(Vector2.up * bounceForce * (gameCon.PlayerDistance() - gameCon.minPlayerDistance));
-                
-                Debug.Log("Bounce");
+                otherBody.AddForce(Vector2.right * angleForce *(gameCon.PlayerDistance() - gameCon.minPlayerDistance) * Vector2.Dot(other.transform.position, transform.parent.transform.position));
             }
         }
 

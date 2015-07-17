@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour {
     public float speed = 10f;
     public float tentionSpeed = 5f;
     public bool isLeftGuy = false;
-    public Transform otherGuyTransform;
 
     private float playerDistance;
     private bool isOnePlayer = false;
@@ -18,9 +17,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        playerDistance = Vector2.Distance(otherGuyTransform.position, transform.position);
-        Debug.Log(playerDistance);
-        
+        playerDistance = gameCon.PlayerDistance();        
         InputContoller();
 	}
 

@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class GameCon : MonoBehaviour {
+    public float MaxPlayerDistance = 16f;
 
 	// Use this for initialization
 	void Start () {

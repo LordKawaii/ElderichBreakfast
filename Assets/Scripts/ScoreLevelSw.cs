@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ScoreLevelSw : MonoBehaviour {
+public class ChangeLevel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -30,7 +30,7 @@ public class ScoreLevelSw : MonoBehaviour {
 
 	void Update() {
 		if (Input.GetKey("escape"))
-			selectScreen (1);
+			Application.Quit();
 		
 	}
 }

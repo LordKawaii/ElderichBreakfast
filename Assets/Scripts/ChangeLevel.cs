@@ -23,4 +23,14 @@ public class ChangeLevel : MonoBehaviour {
 	void selectScreen (int levelID) {
 		Application.LoadLevel (levelID);
 	}
+
+	public void exitKey () {
+		Application.Quit();
+	}
+
+	void Update() {
+		if (Input.GetKey("escape"))
+			Application.Quit();
+		
+	}
 }

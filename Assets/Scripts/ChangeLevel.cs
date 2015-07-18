@@ -7,11 +7,20 @@ public class ChangeLevel : MonoBehaviour {
 	void Start () {
 
 	}
-	
-	// Update is called once per frame
-	IEnumerator FadeOut () {
-		float fadeTime = GameObject.Find ("FadeManager").GetComponent<Fading> ().BeginFade (1);
-		yield return new WaitForSeconds (fadeTime);
-		Application.LoadLevel (Application.loadedLevel + 1);
+
+	public void menuScreen () {
+		selectScreen (1);
+	}
+
+	public void playScreen () {
+		selectScreen (2);
+	}
+
+	public void scoreScreen () {
+		selectScreen (3);
+	}
+
+	void selectScreen (int levelID) {
+		Application.LoadLevel (levelID);
 	}
 }

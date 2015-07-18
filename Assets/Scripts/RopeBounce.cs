@@ -21,8 +21,8 @@ public class RopeBounce : MonoBehaviour {
             if (otherBody != null)
             {
                 float angleAmount = AngleDir(other.transform.position, centerPiece.position);
-                otherBody.AddForce(Vector2.up * bounceForce * (gameCon.PlayerDistance() - gameCon.minPlayerDistance));
-                otherBody.AddForce(Vector2.right * angleForce * (gameCon.PlayerDistance() - gameCon.minPlayerDistance) * angleAmount *-1);
+                otherBody.AddRelativeForce(Vector2.up * bounceForce * (gameCon.PlayerDistance() - gameCon.minPlayerDistance));
+                otherBody.AddRelativeForce(Vector2.right * angleForce * (gameCon.PlayerDistance() - gameCon.minPlayerDistance) * angleAmount *-1);
                 Debug.Log(angleForce);
             }
         }

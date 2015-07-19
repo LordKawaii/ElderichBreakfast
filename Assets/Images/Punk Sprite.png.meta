@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 49e4402b1a54deb46906d2491f90ca6e
-timeCreated: 1437256061
+guid: 7c885ad3fd2a926479bdd0cfdd0fa767
+timeCreated: 1437267362
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Punk Sprite_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,35 +30,25 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 0
+    wrapMode: -1
+  nPOTScale: 1
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 1
-  textureType: 8
+  alphaIsTransparency: 0
+  textureType: -1
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Punk Sprite_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2555
-        width: 408
-        height: 953
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
